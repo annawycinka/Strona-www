@@ -1,14 +1,14 @@
 body {
-  background-color: #9fa9a3;
-  margin: 0 !important;
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 1.25em;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
   width: 100%;
   min-width: 15em;
+  font-size: 1.25em;
+  margin: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9fa9a3;
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-align: center;
 }
 
 .title {
@@ -18,23 +18,23 @@ body {
   font-weight: 900;
 }
 .menu {
-  position: sticky;
-  background-color: #afa878;
   margin-top: 1.25em;
   padding: 0.625em;
+  background-color: #afa878;
   color: white;
-  display: flex;
   justify-content: center;
+  position: sticky;
+  display: flex;
   flex-wrap: wrap;
   z-index: 5777;
 }
 .option {
-  padding: 0.625em;
-  float: left;
   min-width: 3.125em;
   height: 1.563emem;
+  padding: 0.625em;
   font-size: 0.825em;
   border-right: 0.125em dotted rgb(35, 51, 104);
+  float: left;
 }
 .option:hover {
   background-color: #cec9ad;
@@ -43,26 +43,26 @@ body {
 }
 
 .content {
+  width: 80%;
+  padding: 1%;
+  min-width: 20em;
+  margin-top: 1.875em;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  width: 80%;
-  margin-top: 1.875em;
   background-color: #c5d5c5;
   color: black;
   -webkit-box-shadow: 0.188em 0.188em 0.563em 0.063em #000000;
   box-shadow: 0.188em 0.188em 0.563em 0.063em #000000;
-  padding: 1%;
-  min-width: 20em;
   align-items: center;
+  text-align: center;
 }
 .h1 {
-  font-size: 1.875em;
-  font-weight: 900;
   padding: 0.625em;
+  font-size: 1.875em;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
   text-align: left;
   border-bottom: 0.125em dotted rgb(34, 33, 33);
-  color: rgb(0, 0, 0);
 }
 .h2 {
   font-size: 1.875em;
@@ -73,27 +73,25 @@ body {
   color: rgb(0, 0, 0);
 }
 .tekst {
-  margin-top: 1.875em;
-  text-align: justify;
-  padding: 0.6em;
   width: 60%;
+  margin-top: 1.875em;
+  padding: 0.6em;
   font-size: 1em;
   font-weight: 500;
+  text-align: justify;
 }
 .image-section {
+  width: auto;
   display: flex;
   flex-wrap: wrap;
-  width: auto;
   justify-content: space-between;
 }
 
 .image {
-  margin-top: 1.875em;
-
   width: 30%;
   height: auto;
   min-width: 15em;
-
+  margin-top: 1.875em;
   transition: transform 0.2s ease-in-out;
   -webkit-box-shadow: 0.188em 0.188em 0.563em 0.063em #000000;
   box-shadow: 0.188em 0.188em 0.563em 0.063em #000000;
@@ -106,24 +104,24 @@ body {
 
 @media only screen and (min-width: 100px) {
   .image {
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    display: block;
   }
   .tekst {
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    display: block;
   }
 }
 
 .form {
+  width: 80%;
   margin-top: 1.875em;
-  display: inline-block;
+  padding: 1%;
   background-image: url("interlaced.png");
   color: black;
-  width: 80%;
-  padding: 1%;
+  display: inline-block;
   -webkit-box-shadow: 0.188em 0.188em 0.563em 0.063em #000000;
   box-shadow: 0.188em 0.188em 0.563em 0.063em #000000;
 }
@@ -134,39 +132,40 @@ body {
 
 .wpis {
   width: 15.625em;
+  background-color: #f0f0f0;
   border: 0.125em solid #c5d5c5;
   border-radius: 0.313em;
-  background-color: #f0f0f0;
 }
 .wiadomosc {
   width: 25em;
   height: 6.25em;
+  background-color: #f0f0f0;
   border: 0.125em solid #c5d5c5;
   border-radius: 0.313em;
-  background-color: #f0f0f0;
 }
 .button {
-  background-color: rgb(89, 167, 125);
   font-size: 1.25em;
+  background-color: rgb(89, 167, 125);
+
   color: white;
   cursor: pointer;
   border: 0.125em solid #c5d5c5;
   border-radius: 0.313em;
 }
 a.link {
+  min-width: 3.125em;
+  height: 1.563em;
   color: white;
   text-decoration: none;
   display: block;
-  min-width: 3.125em;
-  height: 1.563em;
 }
 .gallery {
+  padding: 3%;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 3%;
 }
 .item {
   width: 50%;
@@ -227,20 +226,15 @@ a.link {
   -ms-transform: scale(1.15);
   transform: scale(1.15);
 }
-
-/* Style the navbar */
 #navbar {
   overflow: hidden;
 }
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 3.75em;
 }
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
+  width: 100%;
   margin-top: 0;
   position: fixed;
   top: 0;
-  width: 100%;
 }
